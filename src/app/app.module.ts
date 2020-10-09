@@ -3,10 +3,20 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ConfirmComponent } from './confirm/confirm.component';
+
+import { LoginComponent } from './login/login.component';
+
+import { RegisterlistComponent } from './registerlist/registerlist.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DashboardComponent, 
+    ConfirmComponent,
+    LoginComponent,
+    RegisterlistComponent
   ],
   imports: [
     BrowserModule,
@@ -15,4 +25,4 @@ import { AppComponent } from './app.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {DashboardComponent; RegisterlistComponent; ConfirmComponent }
